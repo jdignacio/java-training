@@ -26,8 +26,8 @@ class Student {
 	private String name;
 	private String userID;
 	private String email;
-	private String Address1;
-	private String Address2;
+	private String city;
+	private String state;
 	private String phoneNumber = "1234561203";
 	private static final int costOfCourse = 800;
 	private int balance = 0;
@@ -82,8 +82,32 @@ class Student {
 	}
 
 	public String toString() {
-		return "[Name:" + name + "]\n[Courses: "+ courses + "\n[Balance: $" + balance +"]";
+		return "[Name:" + name + "]\n[Courses: "+ courses + "\n[Balance: $" + balance +"]";	
 		
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	
   
